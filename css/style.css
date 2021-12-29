@@ -49,6 +49,15 @@ a, a:link {
 #tnb li:hover {
     color: #000;
 }
+/*================== hero style ==================*/
+#hero {
+    height: 395px;
+}
+.hero-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 /*===================icons style================*/
 #icons {
     background: #d60c00;
@@ -59,13 +68,6 @@ a, a:link {
 }
 #hnb {
     display: flex;
-}
-
-/*================== hero style ==================*/
-.hero-wrap {
-    max-width: 900px;
-    height: 395px;
-    margin: 0 auto;
 }
 
 /*================== main style ==================*/
@@ -86,4 +88,32 @@ a, a:link {
 .prd li {
     border-radius: 50%; /* 테두리 반경 (1:1비율일때 정원으로 모양 깍기*/
     overflow: hidden;
+}
+/*================== aside style ==================*/
+.aside-wrap {
+    border-top: 1px solid #d60100;
+    background: #f1f1f1;
+    margin: 50px 0 20px;
+}
+.aside-wrap > ul {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;   
+}
+.aside-wrap il {
+    font-size: 14px;
+    color: #d60c00;
+}
+/*================== footer style ==================*/
+footer {
+    text-align: center;
+}
+footer .logo-footer {
+    margin: 20px 0;
+}
+footer p {
+    line-height: 1.8;
+    font-size: 12px;
 }
