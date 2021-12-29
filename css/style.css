@@ -1,0 +1,89 @@
+body {
+    font-family: 'Lato', 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+}
+a, a:link {
+    text-decoration: none;
+    color: inherit;
+}
+.blind {
+    display: none;
+}
+
+/*================================================================ header style ==============================================*/
+.header-top {
+    border-bottom: 1px solid#d60c00;
+}
+.top-wrap {
+    max-width: 900px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav {
+    width: 100%;
+}
+.bottom-wrap {
+    max-width: 900px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+#gnb {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+#tnb, #gnb {
+    display: flex;
+    column-gap: 1rem;
+}
+#tnb li {
+    font-size: 13px;
+    color: #888;
+    font-weight: 500;
+}
+#tnb li:hover {
+    color: #000;
+}
+/*===================icons style================*/
+#icons {
+    background: #d60c00;
+}
+.hot-nav {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#hnb {
+    display: flex;
+}
+
+/*================== hero style ==================*/
+.hero-wrap {
+    max-width: 900px;
+    height: 395px;
+    margin: 0 auto;
+}
+
+/*================== main style ==================*/
+#main > article > h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #d60c00;
+    font-weight: 600;
+    text-transform: uppercase; /*대문자*/
+}
+.prd {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.prd li {
+    border-radius: 50%; /* 테두리 반경 (1:1비율일때 정원으로 모양 깍기*/
+    overflow: hidden;
+}
