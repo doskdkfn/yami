@@ -176,6 +176,30 @@ a, a:link {
 .breadcrumb a:hover {
     color: #d60c00;
 }
+/* ================== business style ==================== */
+.business {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+/*================== main > map > style =========*/
+.tab-btns ul {
+    display: flex;
+    column-gap:20px;
+    justify-content: center;
+}
+.tab-btns ul li {
+    width: calc(33.33333333333333%/ 20px);
+    background: #d60c00;
+    color: white;
+    text-align: center;
+}
+.tab-btns ul li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
 
 /* ================== aside style ==================== */
 .aside-wrap {
