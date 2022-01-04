@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <h1 class="blind">스마일푸드 야미</h1>
     <header>
@@ -37,7 +39,7 @@
                         <li><a href="#">야미소개</a>
                             <ul class="lnb">
                                 <li><a href="about/intro.html">기업소개</a></li>
-                                <li><a href="about/business.html"></a></li>
+                                <li><a href="about/business.html">사업안내</a></li>
                                 <li><a href="about/map.html">오시는길</a></li>
                             </ul>
                         </li>
@@ -53,7 +55,7 @@
                                 <li><a href="#">핫도그</a></li>
                             </ul>
                         </li>
-                        
+
                         <li><a href="#">고객센터</a>
                             <ul class="lnb">
                                 <li><a href="#">새소식</a></li>
@@ -88,7 +90,7 @@
                         </ul>
                     </div>
                     <div class="tab-contents">
-                        <div id="map" style="height: 400px;"></div>
+                        <div id="map"></div>
                         <div class="map-info">
                             <div class="info-contact">주소 및 연락처 입니다.</div>
                             <div class="info-traffic">교통수단별 정보입니다.</div>
@@ -114,32 +116,36 @@
             </a>
         </div>
         <address>
-            <p>회사명 : 스마일푸드 야미  사업자등록번호 : 광주-서구-제28호</p>
+            <p>회사명 : 스마일푸드 야미 사업자등록번호 : 광주-서구-제28호</p>
             <p>주소 : 광주광역시 서구 농성로 23-5 (농성동 271-4번지) 한울오피스텔 303호</p>
             <p>copyright&copy; 2021. smile food yami. all rights reserved. </p>
         </address>
     </footer>
     <div id="map" style="width:500px;height:400px;"></div>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=161a99dfa3ac816c9d48f937c9488562"></script>
-	<script>
-		var container = document.getElementById('map');
-		var options = {
-			center: new kakao.maps.LatLng(35.13144116762745, 126.91899595326433),
-			level: 3
-		};
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=161a99dfa3ac816c9d48f937c9488562"></script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(35.13144116762745, 126.91899595326433),
+            level: 3
+        };
 
-		var map = new kakao.maps.Map(container, options);
+        // 마커가 표시될 위치입니다 
+        var markerPosition = new kakao.maps.LatLng(35.13144116762745, 126.91899595326433);
 
-        var markerPosition  = new kakao.maps.LatLng(35.13144116762745, 126.91899595326433);
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-	</script>
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+    </script>
 
-<!--
+    <!--
     <script src="../script/map.js"></script> 지도 관련 기능을 연결하기
     -->
 </body>
+
 </html>

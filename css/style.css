@@ -200,6 +200,9 @@ a, a:link {
     height: 50px;
     line-height: 50px;
 }
+#map {
+    height: 480px;
+}
 
 /* ================== aside style ==================== */
 .aside-wrap {
