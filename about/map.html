@@ -121,7 +121,7 @@
             <p>copyright&copy; 2021. smile food yami. all rights reserved. </p>
         </address>
     </footer>
-    <div id="map" style="width:500px;height:400px;"></div>
+
     <script type="text/javascript"
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=161a99dfa3ac816c9d48f937c9488562"></script>
     <script>
@@ -130,6 +130,9 @@
             center: new kakao.maps.LatLng(35.13144116762745, 126.91899595326433),
             level: 3
         };
+
+        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+        var map = new kakao.maps.Map(container, options);
 
         // 마커가 표시될 위치입니다 
         var markerPosition = new kakao.maps.LatLng(35.13144116762745, 126.91899595326433);
