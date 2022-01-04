@@ -204,8 +204,37 @@ a, a:link {
     height: 400px;
     margin: 3px 0;
 }
+/*================== main > process > style =========*/
+.steps .step {
+    border: 3px solid gray;
+    width: 180px;
+    height: 180px;
+    box-sizing: border-box; /*상자의 크기에 border 포함시켜서 그리게 하는 속성*/
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+.step .title {
+    color: yellowgreen;
+    text-transform: uppercase;
+}
+.title::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: yellowgreen;
+    margin: 10px auto 0;
+}
+.slick-prev:before, .slick-next:before {
+    color: gray !important;
+}
 
 /* ================== aside style ==================== */
+
 .aside-wrap {
     border-top: 1px solid #d60c00;
     background: #f1f1f1;
