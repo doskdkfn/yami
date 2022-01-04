@@ -201,7 +201,8 @@ a, a:link {
     line-height: 50px;
 }
 #map {
-    height: 480px;
+    height: 400px;
+    margin: 3px 0;
 }
 
 /* ================== aside style ==================== */
